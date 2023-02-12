@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Inter&family=Noto+Serif&family=Open+Sans&family=Poppins&family=Space+Grotesk&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden ;
+    padding:2rem ;
+}
+.panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.panel{
+    display: flex;
+    width: 100%;
+    margin: 1rem;
+}
+.rating{
+    flex: 1;
+    transition: transform .5s ease;
+}
+.rating.active p{
+    transform: scale(1.2);
+}
+.rating p{
+    font-size: 3rem;
+    margin: .5rem;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.rating p:hover{
+    transform: scale(1.2);
+}
+.rating small{
+    color: #555;
+    transition: color .5s ease;
+    font-weight: bold;
+}
+.rating small:hover{
+    color: #000;
+}
+.btn{
+    background-color: #c12317;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.97);
+}
+.btn:hover{
+    color: #ddd;
+}
+.fa-heart{
+    font-size: 5rem;
+    color: #b51207;
+    margin-bottom: 1rem;
+}
